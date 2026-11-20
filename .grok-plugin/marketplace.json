@@ -1,0 +1,27 @@
+{
+  "name": "grok-toolkit",
+  "description": "Two explicitly invoked, instructions-only Grok Build skills.",
+  "owner": {
+    "name": "uncmatteth"
+  },
+  "plugins": [
+    {
+      "name": "aiclickthisshit",
+      "description": "Operate an explicitly requested visible task through an already authorized, verified computer tool.",
+      "category": "productivity",
+      "source": {
+        "type": "local",
+        "path": "./plugins/aiclickthisshit"
+      }
+    },
+    {
+      "name": "iliketoworkitworkit",
+      "description": "Coordinate explicitly requested project work across existing authorized tools, verify results, and retain continuity.",
+      "category": "productivity",
+      "source": {
+        "type": "local",
+        "path": "./plugins/iliketoworkitworkit"
+      }
+    }
+  ]
+}

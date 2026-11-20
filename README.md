@@ -1,8 +1,8 @@
 # Grok Toolkit
 
-Two separately installable, instructions-only workflows: **AIClickThisShit** and **ILikeToWorkItWorkIt**. Neither installs a runtime, registers MCP, opens a connection, grants access, or runs automatically.
+Two separately installable Grok Build plugins. Neither registers MCP, grants access, or starts desktop control automatically.
 
-- **AIClickThisShit** works only when the session already has an authorized computer tool that reaches the intended target. A Grok Bot cloud browser is not a local desktop.
+- [**AIClickThisShit**](plugins/aiclickthisshit/README.md) includes a local Linux desktop runtime. Register it manually with an already approved configuration. A Grok Bot cloud browser is not a local desktop.
 - **ILikeToWorkItWorkIt** coordinates available, authorized tools and verifies their results. It can use AIClick when independently available; it does not require a bridge.
 
 ## Grok Build
@@ -17,7 +17,7 @@ grok plugin install aiclickthisshit --trust
 grok plugin install iliketoworkitworkit --trust
 ```
 
-Install either workflow independently and only mark it trusted after reviewing its source. Check discovery with `grok inspect --json`. Discovery is not a live desktop check.
+Install either workflow independently and only mark it trusted after reviewing its source. Check discovery with `grok inspect --json`. Discovery is not a live desktop check. For AIClick setup, see [the plugin’s local registration instructions](plugins/aiclickthisshit/README.md).
 
 ## Grok Bot
 

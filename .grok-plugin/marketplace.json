@@ -1,18 +1,19 @@
 {
   "name": "grok-toolkit",
-  "description": "Two explicitly invoked, instructions-only Grok Build skills.",
+  "description": "Grok Build tools: opt-in Linux desktop control and the Work It workflow.",
   "owner": {
     "name": "uncmatteth"
   },
   "plugins": [
     {
       "name": "aiclickthisshit",
-      "description": "Operate an explicitly requested visible task through an already authorized, verified computer tool.",
+      "description": "Opt-in Linux desktop screen, mouse, and keyboard tools for Grok Build. Manual local registration required.",
       "category": "productivity",
       "source": {
         "type": "local",
         "path": "./plugins/aiclickthisshit"
-      }
+      },
+      "version": "0.2.0"
     },
     {
       "name": "iliketoworkitworkit",

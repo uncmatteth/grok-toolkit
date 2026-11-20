@@ -1,0 +1,7 @@
+- Trust boundary: review both the local package and explicit private configuration before registration. The configuration can select a local Python command and shared state directory, so do not use config from untrusted sources.
+- Start requires existing permissions and claims the upstream shared server lock. Never override another desktop owner or use a separate state root on the same desktop.
+- Exposed MCP capabilities: bridge_status and desktop only. Python request handler rejects all non-desktop kinds; no HTTP/native/OAuth transport, Playwright dependency or browser relay is shipped or configured. General file, browser and shell execution handlers are not shipped. Treat local package code as trusted software.
+- No auto-start of desktop sessions, tunnels, network calls to model services, credential collection, or privilege grants. Don't enter secrets, bypass protections, publish, spend, send, or change permissions based on a skill.
+- If an input result is uncertain, inspect state before retry and don't represent a dispatch as a verified action. Stop and verify ownership release.
+- Wayland goes through the standard RemoteDesktop/ScreenCast portal only. No direct compositor fallback is shipped.
+- This package requests no persisted Wayland consent and does not read, save, or reuse restore tokens.

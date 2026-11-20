@@ -1,5 +1,1 @@
-{
-  "name": "aiclickthisshit",
-  "version": "0.1.0",
-  "description": "Operate an explicitly requested visible task through an already authorized, verified computer tool."
-}
+{"name":"aiclickthisshit","version":"0.2.0","description":"Explicitly enabled local desktop control for Linux in Grok Build, with separate manual registration and existing desktop permission."}

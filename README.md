@@ -3,11 +3,11 @@
 Two separately installable Grok Build plugins. Neither registers MCP, grants access, or starts desktop control automatically.
 
 - [**AIClickThisShit**](plugins/aiclickthisshit/README.md) includes a local Linux desktop runtime. Register it manually with an already approved configuration. A Grok Bot cloud browser is not a local desktop.
-- **ILikeToWorkItWorkIt** coordinates available, authorized tools and verifies their results. It can use AIClick when independently available; it does not require a bridge.
+- [**ILikeToWorkItWorkIt**](plugins/iliketoworkitworkit/README.md) includes the shared coordination workflow and seven analysis-only Grok Build roles. ECC, Caveman, GBrain and desktop tools are separate dependencies or integrations, not bundled or enabled.
 
 ## Grok Build
 
-Inspect the source and two plugin manifests. A repository checkout also exposes direct project skills in `.grok/skills/`. Choose either project discovery or individual plugins to avoid duplicate skill names. For a packaged local plugin point the documented `--plugin-dir` option to its directory under `plugins/`.
+Inspect the source and two plugin manifests. For a checkout, install the Workit plugin from its local directory with `grok plugin install ./plugins/iliketoworkitworkit --trust` after reviewing it. The mirrored project files under `.grok/` are for hosts that load project skills directly. Use only one discovery mode to avoid duplicates. If project mode does not show the skill in `grok inspect --json`, use the packaged plugin.
 
 Add this repository in Grok Build as a custom marketplace:
 

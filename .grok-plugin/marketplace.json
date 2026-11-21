@@ -17,12 +17,13 @@
     },
     {
       "name": "iliketoworkitworkit",
-      "description": "Coordinate explicitly requested project work across existing authorized tools, verify results, and retain continuity.",
+      "description": "Opt-in coordination workflow with seven analysis-only roles; uses independently available and authorized tools.",
       "category": "productivity",
       "source": {
         "type": "local",
         "path": "./plugins/iliketoworkitworkit"
-      }
+      },
+      "version": "0.2.0"
     }
   ]
 }
